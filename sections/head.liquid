@@ -1,0 +1,23 @@
+{{ 'header.css' | asset_url | stylesheet_tag }}
+
+<h1 class="titlee"> {{ section.settings.title }} </h1>
+<div class="padre">
+    <div class="hijo">
+        
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "head",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "HOLA MUNDO"
+                }
+        
+            ]
+    }
+{% endschema %}
